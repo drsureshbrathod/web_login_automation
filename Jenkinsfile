@@ -20,7 +20,7 @@ dockerImage = docker.build registry + ":$BUILD_NUMBER"
 stage('Deploy our image') {
 steps{
 script {
-docker.withRegistry( '', dockerhub ) {
+docker.withRegistry( '', 'dockerhub' ) {
 dockerImage.push()
 }
 }
