@@ -1,7 +1,7 @@
 pipeline {
 environment {
 registry = "drsureshbrathod/myrepo"
-registryCredential = '363c3585-5530-4e49-8f8d-7b012c604bef'
+registryCredential = 'dockerhub'
 dockerImage = ''
 }
 agent any
